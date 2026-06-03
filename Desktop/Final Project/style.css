@@ -1,0 +1,243 @@
+
+:root {
+    --bg-color: #F8F6F0; 
+    --text-primary: #4A453E;
+    --accent-color: #9E8C78; 
+    --header-bg: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: var(--header-bg);
+    position: relative;
+    z-index: 100;
+}
+
+.logo h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+}
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-primary);
+    transition: 0.3s ease;
+}
+
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--accent-color);
+}
+
+
+.hero-section {
+    width: 100%;
+    height: 60vh; 
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.opening-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.grand-opening-text {
+    font-size: 3.5rem;
+    font-style: italic;
+    color: var(--accent-color);
+    font-weight: 400;
+}
+
+
+.bar-section {
+    padding: 4rem 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    font-style: italic;
+    color: #7A746B;
+}
+
+
+.cocktail-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.cocktail-card {
+    background: #FFF;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+.cocktail-card:hover {
+    transform: translateY(-5px);
+}
+
+.cocktail-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.cocktail-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.site-footer {
+    background-color: var(--accent-color);
+    color: #FFF;
+    padding: 4rem 5% 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 600px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--header-bg);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+    
+    .nav-menu.active {
+        max-height: 200px;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+    
+    .grand-opening-text {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        height: 40vh;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    .grand-opening-text {
+        font-size: 2.8rem;
+    }
+    
+    .hero-section {
+        height: 50vh;
+    }
+    
+    .cocktail-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    .cocktail-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero-section {
+        height: 65vh;
+    }
+}
