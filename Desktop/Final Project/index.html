@@ -14,7 +14,7 @@
             <img src="logo.jpg" alt="Halikarnas Mini Icon" class="logo-image-icon">
             <div class="logo-text">
                 <h2>Halikarnas</h2>
-                <span>SWİMMİNG POOL</span>
+                <span>SWİMMİNG POOL & BAR</span>
             </div>
         </div>
         
@@ -31,14 +31,14 @@
                 <li><a href="#rules">ŞƏRTLƏR</a></li>
                 <li><a href="#bar">BAR</a></li>
                 <li><a href="#gallery">QALEREYA</a></li>
-                <li><a href="#contact">ƏLAQƏ</a></li>
+                <li><a href="#reservation">REZERVASİYA</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero-section">
-            <img src="header3.jpg" alt="Halikarnas Pool Area" class="hero-image">
+            <img src="poolheader.jpg" alt="Halikarnas Pool Area" class="hero-image">
         </section>
 
         <section class="opening-section">
@@ -47,8 +47,7 @@
                 <h1 class="grand-opening-title">BÖYÜK AÇILIŞ</h1>
                 <h2 class="date">10 İYUN!</h2>
                 <p class="description">Unutulmaz bir yay üçün yerinizi rezerv edin!</p>
-                <a href="#contact" class="reserve-button">REZERV ET</a>
-            </div>
+                </div>
         </section>
 
         <section class="about-section" id="about">
@@ -117,14 +116,15 @@
                 <h2>Barda Sizi Gözləyən Ləzzətlər</h2>
                 <p>Hovuz kənarında sərinləmək üçün xüsusi kokteyllərimiz</p>
             </div>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Kokteyl axtar...">
+            </div>
             
             <div class="cocktail-container" id="cocktailContainer"></div>
         </section>
 
-        <section class="guests-section" id="gallery">
-            <div class="section-title">
-
-        <section class="pool-gallery-section">
+        <section class="pool-gallery-section" id="gallery">
             <div class="section-title">
                 <h2>Hovuz Ərazimiz</h2>
                 <p>Məkanımızın füsunkar mənzərəsi və istirahət zonaları</p>
@@ -143,6 +143,8 @@
             </div>
         </section>
 
+        <section class="guests-section">
+            <div class="section-title">
                 <h2>Məşhur Qonaqlarımız</h2>
                 <p>Bizimlə yay fəslinin dadını çıxaran ulduzlar</p>
             </div>
@@ -160,6 +162,22 @@
                 <div class="guest-card">
                     <img src="dj.jpg" alt="Məşhur Qonaq 4">
                 </div>
+            </div>
+        </section>
+
+        <section class="reservation-section" id="reservation">
+            <div class="section-title">
+                <h2>Rezervasiya</h2>
+                <p>Yerlərinizi öncədən bron edin</p>
+            </div>
+            <div class="reservation-form-container">
+                <form id="reservationForm">
+                    <input type="text" id="fullName" placeholder="Ad və Soyad" required>
+                    <input type="tel" id="phoneNumber" placeholder="Əlaqə nömrəsi" required>
+                    <input type="date" id="reserveDate" required>
+                    <button type="submit" class="submit-btn">Rezervasiya Et</button>
+                </form>
+                <p id="successMessage" class="hidden-message">Təbrik edirik! Rezervasiyanız uğurla qəbul olundu. Tezliklə sizinlə əlaqə saxlayacağıq!</p>
             </div>
         </section>
     </main>
