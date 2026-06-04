@@ -345,7 +345,7 @@ h1, h2, h3 {
 }
 
 .pool-card img {
-    width: 92%;
+    width: 92%;  /*düzəlt enin */
     height: 95%; 
     padding-top: 7%;
     object-fit: fill;
