@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halikarnas Swimming Pool</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="site-header">
-        <div class="logo">
-            <h2>Halikarnas</h2>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Halikarnas Mini Icon" class="logo-image-icon">
+            <div class="logo-text">
+                <h2>Halikarnas</h2>
+                <span>SWİMMİNG POOL</span>
+            </div>
         </div>
         
         <div class="hamburger-menu" id="mobileMenuBtn">
@@ -22,7 +26,11 @@
 
         <nav class="nav-menu" id="navMenu">
             <ul>
+                <li><a href="#">ANA SƏHİFƏ</a></li>
                 <li><a href="#about">HAQQINDA</a></li>
+                <li><a href="#rules">ŞƏRTLƏR</a></li>
+                <li><a href="#bar">BAR</a></li>
+                <li><a href="#gallery">QALEREYA</a></li>
                 <li><a href="#contact">ƏLAQƏ</a></li>
             </ul>
         </nav>
@@ -30,14 +38,81 @@
 
     <main>
         <section class="hero-section">
-            <img src="pool1.jpg" alt="Halikarnas Pool Area" class="hero-image">
+            <img src="header3.jpg" alt="Halikarnas Pool Area" class="hero-image">
         </section>
 
         <section class="opening-section">
-            <h1 class="grand-opening-text">BÖYÜK AÇILIŞ- 10 İYUN!</h1>
+            <div class="opening-content">
+                <p class="subtitle">Sizi dəvət edirik</p>
+                <h1 class="grand-opening-title">BÖYÜK AÇILIŞ</h1>
+                <h2 class="date">10 İYUN!</h2>
+                <p class="description">Unutulmaz bir yay üçün yerinizi rezerv edin!</p>
+                <a href="#contact" class="reserve-button">REZERV ET</a>
+            </div>
         </section>
 
-        <section class="bar-section" id="about">
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2>Məkanımız Haqqında</h2>
+                <p>🍹<i> Halikarnas Pool</i> sadəcə bir məkan deyil; bura yay abu-havasının və sakitliyin harmoniyasıdır. Minimalist dizaynı dəniz kənarının təbii gözəlliyi ilə birləşdirərək, sizə günəşin istisini və hovuzun sərinliyini eyni anda hiss etdiririk. Dostlarınızla unudulmaz anlar paylaşacağınız, sərin kokteyllərinizlə günün ən ilıq və gözqamaşdırıcı işığında o xüsusi "cinematic" atmosferə qərq olacağınız bu məkanda, yay ruhunu ən incə detalları ilə kəşf edin. <br>☀️Yay hekayəniz burada başlayır.</p>
+            </div>
+        </section>
+
+        <section class="rules-section" id="rules">
+            <div class="section-title">
+                <h2>Giriş Şərtləri</h2>
+                <p>Məkanımızda rahat və təhlükəsiz vaxt keçirməyiniz üçün faydalı məlumatlar</p>
+            </div>
+            
+            <div class="rules-container">
+                <div class="rules-card pricing-card">
+                    <h3>Giriş Haqqı</h3>
+                    <ul class="pricing-list">
+                        <li>
+                            <span class="label">6 yaşa qədər uşaqlar</span>
+                            <span class="price-value free">Ödənişsiz</span>
+                        </li>
+                        <li>
+                            <span class="label">6-12 yaş arası uşaqlar</span>
+                            <span class="price-value">10 AZN</span>
+                        </li>
+                        <li>
+                            <span class="label">Böyüklər (Həftəiçi)</span>
+                            <span class="price-value">15 AZN</span>
+                        </li>
+                        <li>
+                            <span class="label">Böyüklər (Şənbə & Bazar)</span>
+                            <span class="price-value">20 AZN</span>
+                        </li>
+                    </ul>
+                    <p class="include-info">* Ödənişə dəsmal, lejanka və ya masa daxildir.</p>
+                </div>
+
+                <div class="rules-card info-card">
+                    <h3>Klub Qaydaları</h3>
+                    <div class="info-group">
+                        <div class="info-row">
+                            <strong>İş Saatları</strong>
+                            <p>10:00 - 19:00</p>
+                        </div>
+                        <div class="info-row">
+                            <strong>Vaxt Limiti</strong>
+                            <p>Məkan daxilində vaxt limiti yoxdur.</p>
+                        </div>
+                        <div class="info-row">
+                            <strong>Depozit Məlumatı</strong>
+                            <p>Qolbaq və qardiroba görə 10 AZN depozit tələb olunur. Məbləğ çıxış etdiyiniz zaman sizə tam geri qaytarılır.</p>
+                        </div>
+                        <div class="info-row restrict-row">
+                            <strong>Vacib Məhdudiyyət</strong>
+                            <p>Kənardan yemək və içki gətirmək qadağandır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bar-section" id="bar">
             <div class="section-title">
                 <h2>Barda Sizi Gözləyən Ləzzətlər</h2>
                 <p>Hovuz kənarında sərinləmək üçün xüsusi kokteyllərimiz</p>
@@ -45,25 +120,83 @@
             
             <div class="cocktail-container" id="cocktailContainer"></div>
         </section>
+
+        <section class="guests-section" id="gallery">
+            <div class="section-title">
+
+        <section class="pool-gallery-section">
+            <div class="section-title">
+                <h2>Hovuz Ərazimiz</h2>
+                <p>Məkanımızın füsunkar mənzərəsi və istirahət zonaları</p>
+            </div>
+
+            <div class="pool-grid">
+                <div class="pool-card">
+                    <img src="pool1.jpg" alt="Halikarnas Pool Area 1">
+                </div>
+                <div class="pool-card">
+                    <img src="pool3.jpg" alt="Halikarnas Pool Area 2">
+                </div>
+                <div class="pool-card">
+                    <img src="pool2.jpg" alt="Halikarnas Pool Area 3">
+                </div>
+            </div>
+        </section>
+
+                <h2>Məşhur Qonaqlarımız</h2>
+                <p>Bizimlə yay fəslinin dadını çıxaran ulduzlar</p>
+            </div>
+            
+            <div class="guests-container">
+                <div class="guest-card">
+                    <img src="miro.jpg" alt="Məşhur Qonaq 1">
+                </div>
+                <div class="guest-card">
+                    <img src="darbuka.jpg" alt="Məşhur Qonaq 2">
+                </div>
+                <div class="guest-card">
+                    <img src="girls.jpg" alt="Məşhur Qonaq 3">
+                </div>
+                <div class="guest-card">
+                    <img src="dj.jpg" alt="Məşhur Qonaq 4">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer" id="contact">
-        <div class="footer-content">
-            <div class="footer-item">
-                <h3>Instagram</h3>
-                <p>@halikarnas_pool</p>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Ünvanımız</h3>
+                <p>Hövsan yolu, Qum Adası, Bakı, Azərbaycan</p>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.0963647838453!2d50.004830010532686!3d40.34020826017568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306537340853e7%3A0x8d72a9f3c6152dc8!2sHalikarnas%20Balikcisi!5e0!3m2!1sen!2saz!4v1780484061478!5m2!1sen!2saz" 
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
-            <div class="footer-item">
-                <h3>Telefon</h3>
-                <p>+994 55 123 45 67</p>
+
+            <div class="footer-column">
+                <h3>Əlaqə</h3>
+                <p><strong>Tel:</strong> +994 55 902 52 62</p>
+                <p><strong>E-poçt:</strong> info@halikarnas.az</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/halikarnas_beach_club" target="_blank">@halikarnas_beach_club</a>
+                </div>
             </div>
-            <div class="footer-item">
-                <h3>E-poçt</h3>
-                <p>info@halikarnas.az</p>
+
+            <div class="footer-column">
+                <h3>Keçidlər</h3>
+                <ul class="footer-links">
+                    <li><a href="https://monyo.az/v4/?r=halikarnas_balikcisi" target="_blank">MENYU</a></li>
+                    <li><a href="#">ANA SƏHİFƏ</a></li>
+                    <li><a href="#bar">BAR</a></li>
+                </ul>
             </div>
         </div>
+        
         <div class="footer-bottom">
-            <p>&copy; 2026 Halikarnas Swimming Pool. Bütün hüquqlar qorunur.</p>
+            <p>© 2026 Halikarnas Swimming Pool. Bütün hüquqlar qorunur.</p>
         </div>
     </footer>
 
