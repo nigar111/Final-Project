@@ -13,10 +13,12 @@ img, iframe {
     padding: 0;
     box-sizing: border-box;
 }
-.hero-image { 
-    height: auto; 
+.hero-image {
     width: 100%;
-    display: block;
+    height: 100%;
+    display: block; 
+    object-fit: cover; 
+    object-position: center 30%;
 }
 
 
@@ -98,14 +100,12 @@ h1, h2, h3 {
     background-color: #2C2A28;
 }
 
-
 .hero-section {
- width: 100%;
-    aspect-ratio: 16 / 9;   
-    object-fit: cover;     
-    object-position: center;
+    width: 100%;
+    height: 90vh; 
+    overflow: hidden; 
+    position: relative;
 }
-
 
 .opening-section {
     padding: 6rem 2rem;
@@ -808,4 +808,79 @@ h1, h2, h3 {
 
 .hidden-message.show {
     display: block;
+}
+
+/* Gecə (Bar) rejimi aktiv olanda rənglərin avtomatik dəyişməsi */
+body.dark-theme {
+    background-color: #121212 !important;
+    color: #e0dbd1 !important;
+}
+
+body.dark-theme .site-header, 
+body.dark-theme .rules-card, 
+body.dark-theme .reservation-form-container {
+    background-color: #1a1a1a !important;
+    border-color: #333 !important;
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme .logo-text h2 {
+    color: #f4f1eb !important;
+}
+
+body.dark-theme .cocktail-card {
+    background-color: #222222 !important;
+   
+    
+}
+
+.faq-section {
+    max-width: 650px;
+    margin: 80px auto; 
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+details {
+    background-color: #f4f1eb;
+    margin-bottom: 15px;
+    padding: 18px;
+    border-radius: 4px;
+    border: 1px solid #e0dbd1;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: 500;
+    color: #7A746B;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    outline: none;
+}
+
+
+summary::-webkit-details-marker,
+summary::marker {
+    display: none;
+}
+
+
+details p {
+    margin-top: 12px;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-top: 1px solid #e0dbd1;
+    padding-top: 12px;
 }

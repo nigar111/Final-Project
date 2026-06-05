@@ -127,3 +127,4 @@ function checkPoolStatus() {
     }
 }
 window.addEventListener('DOMContentLoaded', checkPoolStatus);
+
