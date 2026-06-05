@@ -109,3 +109,21 @@ reservationForm.addEventListener('submit', (event) => {
 });
 
 window.addEventListener('DOMContentLoaded', fetchCocktails);
+
+const refreshDrinksBtn = document.querySelector('#refreshDrinksBtn');
+refreshDrinksBtn.addEventListener('click', fetchCocktails);
+
+function checkPoolStatus() {
+    const statusElement = document.querySelector('#shopStatus');
+    const currentHour = new Date().getHours(); 
+
+   
+    if (currentHour >= 10 && currentHour < 19) {
+        statusElement.innerHTML = '🟢 Hazırda AÇIQDIR';
+        statusElement.style.color = '#4CAF50'; 
+    } else {
+        statusElement.innerHTML = '🔴 Hazırda QAPALIDIR';
+        statusElement.style.color = '#F44336'; 
+    }
+}
+window.addEventListener('DOMContentLoaded', checkPoolStatus);

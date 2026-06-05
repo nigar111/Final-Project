@@ -684,7 +684,6 @@ h1, h2, h3 {
     }
 }
 
-
 @media screen and (min-width: 992px) {
     .cocktail-container,
     .pool-grid {
@@ -782,16 +781,17 @@ h1, h2, h3 {
 }
 
 .submit-btn {
-    padding: 15px;
-    background-color: #51827E;
+    background-color: #446c68;
     color: #FFF;
     border: none;
     border-radius: 6px;
-    font-size: 1.05rem;
     font-weight: 600;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     transition: background-color 0.3s;
+    margin-top: 10px; 
+    padding: 8px 15px;
+    font-size: 0.9rem;
 }
 
 .submit-btn:hover {
