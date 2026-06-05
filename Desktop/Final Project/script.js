@@ -128,3 +128,29 @@ function checkPoolStatus() {
 }
 window.addEventListener('DOMContentLoaded', checkPoolStatus);
 
+function initDynamicTemperature() {
+    const fillElement = document.querySelector('#scaleFill');
+    const valueElement = document.querySelector('#tempValue');
+
+    const minTemp = 24;
+    const maxTemp = 28;
+    const randomTemperature = Math.floor(Math.random() * (maxTemp - minTemp + 1)) + minTemp;
+
+  
+    if (valueElement) {
+        valueElement.innerHTML = randomTemperature + "°C";
+    }
+
+
+    const maxTemperature = 40; 
+    const percentage = (randomTemperature / maxTemperature) * 100;
+
+    setTimeout(() => {
+        if (fillElement) {
+            fillElement.style.width = percentage + '%';
+        }
+    }, 300);
+}
+
+
+window.addEventListener('DOMContentLoaded', initDynamicTemperature);
