@@ -5,7 +5,6 @@ const searchInput = document.querySelector('#searchInput');
 const reservationForm = document.querySelector('#reservationForm'); 
 const successMessage = document.querySelector('#successMessage'); 
 
-
 let fetchedDrinks = []; 
 
 mobileMenuBtn.addEventListener('click', () => {

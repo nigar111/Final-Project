@@ -2,7 +2,7 @@ html, body {
     scroll-behavior: smooth;
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     position: relative; 
 }
 img, iframe {
@@ -276,7 +276,7 @@ h1, h2, h3 {
 }
 
 .restrict-row p {
-    color: #c4561b;
+    color: #a93e35;
     font-weight: 500;
 }
 
@@ -311,6 +311,13 @@ h1, h2, h3 {
     border-radius: 8px;
     text-align: center;
     border: 1px solid #E0DCD5;
+    margin-top: 0; 
+    transition: margin-top 0.3s ease;
+}
+
+.cocktail-card:hover {
+    margin-top: -10px; 
+   
 }
 
 .cocktail-card img {
@@ -380,6 +387,8 @@ h1, h2, h3 {
     background-color: #2C2A28;
     color: #FFF;
     padding: 5rem 6% 2rem;
+    width: 100%;
+    overflow: hidden;
 }
 
 .footer-container {
@@ -414,12 +423,16 @@ h1, h2, h3 {
     margin-top: 10px;
     border: 3px solid #444;
     display: inline-block;
+    max-width: 100%; /* Konteynerin ekranı keçməsinin qarşısını alır */
+    box-sizing: border-box; /* SEHRLİ TOXUNUŞ: Çərçivənin 100%-i şişirtməsinə icazə vermir */
 }
 
 .map-wrapper iframe {
-    width: 250px !important; 
-    height: 150px !important;
+    width: 250px; /* !important-ı burdan sildik ki, mobil ekranda rahat 100% ola bilsin */
+    max-width: 100% !important;
+    height: 150px;
     display: block;
+    box-sizing: border-box;
 }
 
 .social-links {
